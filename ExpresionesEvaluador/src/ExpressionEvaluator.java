@@ -2,7 +2,7 @@
 
 	public class ExpressionEvaluator {
 	    
-	    // Método 1: Verificar si los paréntesis están balanceados en la expresión infija
+	   
 	    public static boolean areParenthesesBalanced(String expression) {
 	        Stack<Character> stack = new Stack<>();
 	        for (char ch : expression.toCharArray()) {
@@ -18,7 +18,7 @@
 	        return stack.isEmpty();
 	    }
 
-	    // Método 2: Convertir de notación infija a postfija (Notación Polaca Inversa)
+	  
 	    public static String infixToPostfix(String expression) {
 	        StringBuilder output = new StringBuilder();
 	        Stack<Character> stack = new Stack<>();
@@ -53,7 +53,7 @@
 	        return output.toString();
 	    }
 
-	    // Método 3: Evaluar una expresión en notación postfija
+	    
 	    public static int evaluatePostfix(String expression) {
 	        Stack<Integer> stack = new Stack<>();
 	        for (char ch : expression.toCharArray()) {
@@ -73,7 +73,7 @@
 	        return stack.pop();
 	    }
 	    
-	    // Método de prueba
+	    
 	    public static void main(String[] args) {
 	        String infixExpression = "(3+5)*2";
 	        
